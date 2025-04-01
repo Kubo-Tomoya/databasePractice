@@ -8,7 +8,7 @@ CREATE TABLE "users" (
     "id" SERIAL PRIMARY KEY,
     "name" CHAR(255) NOT NULL DEFAULT '' COMMENT '氏名',
     "age" INT NOT NULL DEFAULT 0 COMMENT '年齢',
-    "gender" VARCHAR(10) NOT NULL DEFAULT 'Other' COMMENT '性別'
+    `gender` enum('Man','Woman','Other') NOT NULL DEFAULT 'Other' Comment '性別',
 );
 
 -- 問題3. postgresqlでpracticeデータベースのjobsテーブルを生成するSQL文を記述してください。
