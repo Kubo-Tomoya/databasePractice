@@ -20,7 +20,8 @@
 -- 問5
 -- 平均寿命が56歳から76歳の国をすべて抽出してください。
 
-    SELECT name FROM countries WHERE life_expectancy >=56 UNION SELECT name FROM countries WHERE life_expectancy<=76;
+    SELECT name FROM countries WHERE life_expectancy BETWEEN 56 AND 76;
+
 
 -- 問6
 -- 国コードがNLB,ALB,DZAのもの市区町村をすべて抽出してください。
